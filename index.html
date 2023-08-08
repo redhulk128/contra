@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contra</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="helpBtn">?</div>
+    <img id="helpImage" src="./assets/images/contrahelp.png" alt="help" class="hide" />
+    <div id="main_menu">
+      <img src="./assets/images/contra.jpeg" alt="mainmenu" />
+      <div class="btn">
+        <input id="number" type="number" placeholder="Enter id here" />
+        <button id="continue_btn">Continue</button>
+        <button id="single_player_btn">Single Player</button>
+        <button id="double_player_btn">Double Player</button>
+        <button id="track_editor">Make Track</button>
+      </div>
+    </div>
+    <div id="game_win">Congratulation level cleared</div>
+    <div id="game_over"></div>
+    <div id="track_editor_page"></div>
+    <canvas></canvas>
+    <script src="./assets/js/constants.js"></script>
+    <script src="./assets/js/imageLoader.js"></script>
+    <script src="./assets/js/utilities.js"></script>
+    <script src="./assets/js/Bullet.js"></script>
+    <script src="./assets/js/Player.js"></script>
+    <script src="./assets/js/Enemy.js"></script>
+    <script src="./assets/js/EnemyBot.js"></script>
+
+    <script src="./assets/js/Track.js"></script>
+    <script src="./assets/js/Background.js"></script>
+    <script src="./assets/js/Blast.js"></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+#main_menu {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  background-image: url("/assets/images/background.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 20%;
+  position: relative;
+}
+#main_menu img {
+  height: 70%;
+  width: 70%;
+  opacity: 85%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+#main_menu .btn {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+}
+#main_menu .btn button {
+  padding: 10px 40px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  background-color: black;
+  opacity: 50%;
+  color: white;
+  transition: all 400ms ease-in-out;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#main_menu .btn button:hover {
+  border: red 2px solid;
+  opacity: 100%;
+}
+#main_menu .btn button:focus {
+  opacity: 100%;
+}
+#main_menu input {
+  padding: 10px;
+  border-radius: 20px;
+}
+
+canvas {
+  display: none;
+}
+
+#error_message {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 40px;
+  width: 300px;
+  background-color: brown;
+  color: white;
+  padding: 10px;
+  transition: all ease-in-out 1s;
+  border-radius: 10px;
+  z-index: 100;
+}
+#success_message {
+  position: absolute;
+  z-index: 100;
+  top: 0px;
+  right: 0px;
+  height: 40px;
+  width: 300px;
+  background-color: green;
+  color: white;
+  padding: 10px;
+  transition: all ease-in-out 1s;
+  border-radius: 10px;
+}
+
+#save_btn {
+  position: absolute;
+  background-color: greenyellow;
+  z-index: 10;
+  top: 0px;
+  right: 100px;
+  padding: 10px;
+  border-radius: 25px;
+}
+#game_win {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 500px;
+  display: none;
+}
+#game_over {
+  z-index: 3;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  text-align: center;
+  padding-top: 500px;
+  display: none;
+}
+#game_over h1 {
+  font-size: 40px;
+  color: red;
+}
+#game_over h2 {
+  font-size: 24px;
+  color: white;
+}
+
+input {
+  margin-bottom: 10px;
+}
+#helpBtn {
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  z-index: 200;
+}
+#helpImage {
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  top: 100px;
+  left: 0px;
+  z-index: 9999;
+}
+.hide {
+  display: none;
+}
+#track_editor_page {
+  display: none;
+}
